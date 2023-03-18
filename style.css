@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("pic/a-5.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+
+
+
+.main-manu ul {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+}
+
+.main-manu ul li {
+    list-style: none;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle svg {
+    width: 30px;
+}
+
+.main-manu ul li a {
+    background-color: palevioletred;
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 10px 13px;
+
+}
+
+.sad a {
+    border-radius: 8px 0 0 8px;
+}
+
+.ssad a {
+    border-radius: 0 8px 8px 0;
+}
+
+.main-manu ul li a:hover {
+    background-color: black;
+    color: palevioletred;
+
+}
+
+
+
+
+.login-form {
+    flex-direction: column;
+    width: 563px;
+}
+
+
+.login-form input,
+button {
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.totop {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    display: none;
+}
+
+
+.para:hover {
+    background-color: rgb(194, 72, 16);
+}
+
+.nani:hover {
+    background-color: rgb(2 132 199);
+}
+
+/* responsive design style  */
+
+@media (max-width: 682px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .main-manu ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 474px) {
+    .main-manu ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .sad a {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .ssad a {
+        border-radius: 0 0 8px 8px;
+    }
+
+
+    .main-manu ul li a {
+        display: block;
+    }
+
+    .toggle {
+        text-align: right;
+        display: block;
+    }
+}
